@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+* {
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 200px 1fr 120px;
+    grid-template-columns: 200px 1fr 200px;
+}
+
+header {
+    background-color: #FFEFB7;
+    color: red;
+    height: 200px;
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 70px;
+}
+
+.nav a {
+    padding: 5px 50px;
+    color: red;
+}
+
+.logo {
+    width: 140px;
+    object-fit: scale-down;
+    padding: 10px;
+}
+
+
+footer {
+    background-color: #FFEFB7 ;
+    height: 120px;
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contact-img {
+    width: 40px;
+    height: 40px;
+    object-fit: scale-down;
+    margin: 2px;
+}
+
+.logo2 {
+    width: 80px;
+    object-fit: scale-down;
+    padding: 10px;
+}
+
+body {
+    background-color: #DADADA;
+}
+
+main .table {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:max-content;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  table, th, td {
+    border: 1px solid black;
+    width: 800px;
+    height: 150px;
+    text-align: center;
+    background-color: white;
+  }
+
+.THead {
+    background-color: #65c1ff;
+    font-size: 35px;
+}
+
+.copyrights {
+      font-size: 25px;
+  }
+
+.info {
+    display: grid;
+    grid-template-rows: 500px ;
+    grid-template-columns: 0.5fr 0.5fr;
+    gap: 10px 20px;
+    align-items: center;
+}
+
+.form {
+    display: grid;
+    grid-template-rows: 100px 300px 100px ;
+    grid-template-columns: 1fr;
+    gap: 0px 20px;
+    align-items: center;
+  }
+  
+.SForm {
+    display: grid;
+    grid-template-rows: 35px 35px ;
+    grid-template-columns: 100px 300px;
+    gap: 10px 20px;
+  }
+
+.LForm {
+    display: grid;
+    grid-template-rows: 200px ;
+    grid-template-columns: 100px 500px;
+    gap: 10px 20px;
+  }
+
+.BForm {
+    display: grid;
+    grid-template-rows: 100px ;
+    grid-template-columns: 100px 100px;
+    align-items: center;
+}
