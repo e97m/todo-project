@@ -6,19 +6,23 @@
     box-sizing: border-box;
 }
 
+main{
+    padding: 50px;
+}
 
 .grid-container {
     display: grid;
     grid-template-rows: 200px 1fr 120px;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 1fr 8fr 1fr;
 }
 
 header {
     background-color: #FFEFB7;
     color: red;
     height: 200px;
-    grid-column: 1 / -1;
-    display: flex;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 100px 100px;
     align-items: center;
     text-align: center;
     justify-content: space-between;
@@ -29,21 +33,27 @@ header {
 }
 
 .nav a {
-    padding: 5px 50px;
+    padding: 1px 50px;
     color: red;
+}
+
+.nav {
+    height: 250px;
+    justify-content: center;
+    align-items:center;
 }
 
 .logo {
     width: 140px;
     object-fit: scale-down;
     padding: 10px;
+    grid-row: 1/-1;
 }
 
 
 footer {
     background-color: #FFEFB7 ;
     height: 120px;
-    grid-column: 1 / -1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,7 +81,7 @@ main .table {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width:max-content;
     padding: 50px;
     margin-left: auto;
@@ -80,7 +90,7 @@ main .table {
 
   table, th, td {
     border: 1px solid black;
-    width: 800px;
+    width: 700px;
     height: 150px;
     text-align: center;
     background-color: white;
@@ -98,9 +108,16 @@ main .table {
 .info {
     display: grid;
     grid-template-rows: 500px ;
-    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-columns: 2fr 1fr;
     gap: 10px 20px;
     align-items: center;
+    padding: 30px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
 
 .form {
@@ -109,25 +126,26 @@ main .table {
     grid-template-columns: 1fr;
     gap: 0px 20px;
     align-items: center;
+    padding: 15x;
   }
   
 .SForm {
     display: grid;
     grid-template-rows: 35px 35px ;
-    grid-template-columns: 100px 300px;
+    grid-template-columns: 100px 0.25fr;
     gap: 10px 20px;
   }
 
 .LForm {
     display: grid;
     grid-template-rows: 200px ;
-    grid-template-columns: 100px 500px;
+    grid-template-columns: 100px 0.75fr;
     gap: 10px 20px;
   }
 
 .BForm {
     display: grid;
     grid-template-rows: 100px ;
-    grid-template-columns: 100px 100px;
+    grid-template-columns: 100px 150px;
     align-items: center;
 }
