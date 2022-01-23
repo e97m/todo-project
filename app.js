@@ -18,12 +18,19 @@ while (age <= 0) {
     age = prompt('How old are you? (enter a number)')
 }
 
+
+function yesNo (input){
+    while (input != "yes" && input !="no" && input !="Yes" && input !="No") {
+        alert('Invalid value!')
+        input= prompt('Enter a valid value like (yes/no)!')
+    }  
+    finalInput=input
+    return finalInput
+}
+
 let show = prompt('Show welcome message?(yes/no)')
 
-while (show != "yes" && show !="no" && show !="Yes" && show !="No") {
-    alert('Invalid value! please enter one of the folwing words (yes/no)')
-    show = prompt('Show welcome message?(yes/no)')
-}
+yesNo(show)
 
 if (show == "yes" || show =="Yes") {
     if (gender == 'male' || gender == 'Male'){
@@ -34,3 +41,24 @@ if (show == "yes" || show =="Yes") {
         else {alert('Welcome ' + theName + '!')}
 }
 
+let arr=[]
+
+let q1 = prompt('Do you live in Jordan? (yes/no)')
+yesNo(q1)
+arr.push(['Q1', finalInput])
+
+let q2 = prompt('Do you speack German? (yes/no)')
+yesNo(q2)
+arr.push(['Q2', finalInput])
+
+let q3 = prompt('Can you code using JS? (yes/no)')
+yesNo(q3)
+arr.push(['Q3', finalInput])
+
+console.log(arr)
+
+for (let i=0; i<arr.length ; i++) {
+    for (let j=0; j<2 ; j++){
+        console.log(arr[i][j])
+    }
+}
