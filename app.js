@@ -26,10 +26,10 @@ function yesNo (input){
     }  
     finalInput=input
     return finalInput
+
 }
 
 let show = prompt('Show welcome message?(yes/no)')
-
 yesNo(show)
 
 if (show == "yes" || show =="Yes") {
